@@ -1,0 +1,12 @@
+name: test
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  testings:
+    runs-on: "self-hosted"
+    steps:
+    - name: Run a one-line script
+      run: echo Hello, world!
